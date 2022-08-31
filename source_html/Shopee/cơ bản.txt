@@ -1,0 +1,8 @@
+-font- : Helvetica
+size = header : 13px ; main : 14px
+
+--background-header-- : #f53d2d vs #ff6433
+--shp-primary : #ff7c3a
+--shp-fontcolor: rgba(0,0,0,.87)
+--nth-fontcolor : rgba(0,0,0,.54)
+--shp-bordercolor : #ee4d2d
