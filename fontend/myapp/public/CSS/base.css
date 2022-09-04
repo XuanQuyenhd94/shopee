@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url(../Font/Helvetica.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 14px;
+    font-family: "Helvetica","sans-serif";
+    font-style: normal;
+}
+i{
+    padding:0 5px;
+}
+:root {
+    --shp-background : linear-gradient(-180deg,#f53d2d,#f63);
+    --shp-primary : #ff7c3a ;
+    --shp-secondary: #f53d2d;
+    --shp-fontcolor: rgba(0,0,0,.87);
+    --nth-fontcolor : rgba(0,0,0,.54);
+    --shp-bordercolor : #ee4d2d;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes headerNotify {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
