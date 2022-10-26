@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react';
+import cart from '../assets/Imgs/no-cart.png';
 
-import cart from '../../assets/Imgs/no-cart.png'
-
-export default class Cart extends Component {
-    render() {
-        return (
+function Cart() {
+    return (
+        <>
             <div className="shp-cart">
                 <a href className="shp-cart--link">
                     <i className="fa-solid fa-cart-shopping" />
@@ -16,6 +15,8 @@ export default class Cart extends Component {
                     </div>
                 </div>
             </div>
-        )
-    }
+        </>
+    )
 }
+
+export default Cart

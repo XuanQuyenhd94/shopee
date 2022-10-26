@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
-import noty from '../../assets/Imgs/no-noty.png'
-export default class Noty extends Component {
-    render() {
-        return (
-            <div className="hder-icons--group shp-noti">
+import React from 'react';
+import noty from '../assets/Imgs/no-noty.png';
+
+function Noty() {
+  return (
+    <>
+        <div className="hder-icons--group shp-noti">
                 <i className="fa-solid fa-bell" />
                 <span>Thông Báo</span>
                 <div className="shp-noti--information">
@@ -17,6 +18,8 @@ export default class Noty extends Component {
                     </div>
                 </div>
             </div>
-        )
-    }
+    </>
+  )
 }
+
+export default Noty

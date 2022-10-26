@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class TopMenu extends Component {
-    render() {
-        return (
+function TopMenu() {
+    return (
+        <>
             <div className="shp-wrapper--link">
                 <a href className="shp-link">Dép</a>
                 <a href className="shp-link">Áo Khoác</a>
@@ -13,6 +13,8 @@ export default class TopMenu extends Component {
                 <a href className="shp-link">Ốp iphone</a>
                 <a href className="shp-link">Quần Jean Nam</a>
             </div>
-        )
-    }
+        </>
+    )
 }
+
+export default TopMenu

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Helvetica";
-    src: url(../Font/Helvetica.ttf);
+    src: url(./Font/Helvetica.ttf) ;
 }
 
 *{
@@ -10,10 +10,15 @@
     list-style: none;
     text-decoration: none;
 }
-html{
+p , span, div{
     font-size: 14px;
-    font-family: "Helvetica","sans-serif";
+    font-family: "Helvetica","sans-serif" !important;
     font-style: normal;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Helvetica","sans-serif" !important;
 }
 i{
     padding:0 5px;
