@@ -279,3 +279,22 @@ header {
 .shp-sup--result li {
 	margin: 10px 0;
 }
+.sp-footer{
+	margin-top: 30px;
+
+	li{
+		line-height: 26px;
+		font-size: 12px;
+
+		span{
+			margin-left: 20px;
+			font-size: 12px;
+		}
+	}
+	strong{
+		font-size: 12px;
+		display: block;
+		text-transform: uppercase;
+		padding: 10px 0;
+	}
+}
