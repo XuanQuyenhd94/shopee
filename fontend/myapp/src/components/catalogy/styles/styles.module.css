@@ -1,0 +1,24 @@
+.catalogy{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 10%;
+    height: 165px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    color: #4a4a4a;
+}
+.item:hover{
+    color: #4a4a4a;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.item img{
+    display: inline-block;
+    width: 80%;
+    margin: 5px auto;
+}
+.item p{
+    padding: 0 5px;
+}

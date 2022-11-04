@@ -3,7 +3,7 @@ header {
 	color: white;
 	font-size: 13px;
 	a {
-		color: rgba(255, 255, 255, .9);
+		color: rgba(255, 255, 255, .9) !important;
 		font-weight: 500;
 		font-size: 13px;
 		font-weight: 300;
@@ -296,5 +296,25 @@ header {
 		display: block;
 		text-transform: uppercase;
 		padding: 10px 0;
+	}
+}
+.sp-main-wrapper{
+	padding: 5px 0;
+	.sp-wrapper-title{
+		margin: 30px 0;
+		font-size: 20px;
+		color: rgba(0,0,0,.54)
+	}
+	.sp-wrapper-title-item{
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		color: var(--shp-secondary);
+	}
+	.sp-wrapper-hr{
+		height: 5px;
+		width: 100%;
+		background-color: var(--shp-primary);
+		margin-bottom: 15px;
 	}
 }
