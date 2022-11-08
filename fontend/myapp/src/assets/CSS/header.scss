@@ -311,10 +311,10 @@ header {
 		text-align: center;
 		color: var(--shp-secondary);
 	}
-	.sp-wrapper-hr{
-		height: 5px;
-		width: 100%;
-		background-color: var(--shp-primary);
-		margin-bottom: 15px;
-	}
+}
+.sp-wrapper-hr{
+	height: 3px;
+	width: 100%;
+	background-color: var(--shp-primary);
+	margin-bottom: 15px;
 }

@@ -5,6 +5,7 @@ import Slides from '../../components/slides/Slides'
 import {imgs} from '../../assets/Imgs/slides/slides'
 import {banner} from '../../assets/Imgs/banner/banner'
 import Catalogy from '../../components/catalogy/Catalogy'
+import ItemWrapper from '../../components/items/ItemWrapper'
 
 function HomePage() {
   return (
@@ -42,9 +43,11 @@ function HomePage() {
             <div className='sp-wrapper-title-item'>gợi ý hôm nay</div>
 
             <div className="sp-wrapper-hr"></div>
+            <ItemWrapper/>
         </div>
 
-        </Container>
+        </Container>        
+        <div className="sp-wrapper-hr"></div>
     </main>
   )
 }
