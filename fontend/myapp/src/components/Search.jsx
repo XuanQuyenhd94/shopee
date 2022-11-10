@@ -1,12 +1,13 @@
 import React from 'react'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
 function Search() {
     return (
         <>
             <div className="shp-form--search">
                 <input type="search" name id placeholder="Flash Sale 50%" />
                 <button type="submit">
-                    <i className="fa-solid fa-magnifying-glass" />
+                    <FontAwesomeIcon icon={faSearch}/>
                 </button>
             </div>
             {/*sử lý phần tìm kiếm thông qua js*/}

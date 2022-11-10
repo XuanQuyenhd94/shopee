@@ -4,7 +4,7 @@ import './assets/CSS/base.scss';
 import './assets/CSS/header.scss';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
-
+import LoadingPage from './views/loadding/LoadingPage';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
     <Header/>
     <Outlet/>
     <Footer/>
+    {/* <LoadingPage/> */}
     </>
   );
 }
