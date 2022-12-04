@@ -9,8 +9,19 @@ import NotFound from '../../views/not-found/NotFound'
 import Buyer from "../../views/buyer/Buyer";
 import BuyerLogin from "../../views/buyer/BuyerLogin";
 import BuyerSignup from "../../views/buyer/BuyerSignup";
+import Products from "../../views/product/Products";
+import Catalogy from "../../views/catalogy/Catalogy";
+import DetailProduct from "../../views/detail/DetailProduct";
+import Chat from "../../admin/components/chat/Chat";
+import ProtectedAdmin from "../protectedRouter/ProtectedAdmin";
+import CartShopee from "../../views/cart/CartShopee";
+import AdminProducts from "../../admin/pages/product/AdminProducts";
+import AdminCatalogy from "../../admin/pages/catalogy/AdminCatalogy";
+import AddProduct from "../../admin/pages/product/AddProduct";
+import ProtectedBuyer from "../protectedRouter/ProtectedBuyer";
 
 const routerConfig = [
+    //trang hiển thị
     {
         path:'/',
         element:<App/>,
@@ -18,9 +29,26 @@ const routerConfig = [
             {
                 path: rootRouter.HOME,
                 element:<Home/>
+            },
+            {
+                path:rootRouter.PRODUCT,
+                element:<Products/>
+            },
+            {
+                path:rootRouter.CATALOGY_ALL,
+                element:<Catalogy/>
+            },
+            {
+                path: rootRouter.DETAIL_PRODUCT,
+                element:<DetailProduct/>
+            },
+            {
+                path:rootRouter.CART,
+                element:<ProtectedBuyer><CartShopee/></ProtectedBuyer>
             }
         ]
     },
+    //trang người mua hàng
     {
         path:'/buyer',
         element:<Buyer/>,
@@ -38,6 +66,34 @@ const routerConfig = [
             }
         ]
     },
+    //phần dành cho admin
+    {
+        path:'/admin',
+        element:<ProtectedAdmin><Admin/></ProtectedAdmin>,
+        children:[
+            {
+                path:rootRouter.ADMIN_HOME,
+                element: <HomeAdmin/>
+            },
+            {
+                path:rootRouter.ADMIN_CHAT,
+                element: <Chat/>
+            },
+            {
+                path:rootRouter.ADMIN_CATALOGY,
+                element :<AdminCatalogy/>
+            },
+            {
+                path:rootRouter.ADMIN_PRODUCT,
+                element:<AdminProducts/>
+            },
+            {
+                path:rootRouter.ADMIN_ADD_PRODUCT,
+                element : <AddProduct/>
+            }
+           
+        ]
+    },
     {
         path:'/login',
         element:<Login/>
@@ -45,17 +101,6 @@ const routerConfig = [
     {
         path:'register',
         element:<Register/>
-    },
-    {
-        path:'/admin',
-        element:<Admin/>,
-        children:[
-            {
-                path:rootRouter.ADMIN_HOME,
-                element: <HomeAdmin/>
-            }
-           
-        ]
     },
     {
         path:'*',

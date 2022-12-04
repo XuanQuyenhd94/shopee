@@ -1,28 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { currencyFormat } from '../../ultils/constant'
 import styles from './styles/styles.module.css'
 
-function Item() {
+function Item({data , keyData}) {
   return (
-    <a href="">
+    <Link to={`/detail_product/${data.slug}/${keyData}`}>
         <div className={styles.wrapper}>
             <div className={styles.imgBox}>
-                <img src="https://cf.shopee.vn/file/d0a1a411e5d41765d09b0cef77d7c293_tn" alt="" />
+                <img src={data.avatar} alt="" />
             </div>
             <div className={styles.title}>
-                Áo Khoác Len Cardigan Hàng Quảng Châu
+                {data.name}
             </div>
             <div className={styles.container}>
                 <div className={styles.price}>
                     <span>đ</span>
-                    <span>10.000</span>
+                    <span>{currencyFormat(data.price)}</span>
                 </div>
-                <div className={styles.sell}>
+                {/* <div className={styles.sell}>
                     <span>Đã bán</span>
                     <span>20k</span>
-                </div>
+                </div> */}
             </div>
             <div className={styles.sale}>
-                <p>50%</p>
+                <p>{data.sale}%</p>
                 <div>
                     giảm
                 </div>
@@ -31,7 +33,7 @@ function Item() {
                 <p>Tìm sản phẩm tương tự</p>
             </div>
         </div>
-    </a>
+    </Link>
   )
 }
 

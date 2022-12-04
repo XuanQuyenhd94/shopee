@@ -318,3 +318,32 @@ header {
 	background-color: var(--shp-primary);
 	margin-bottom: 15px;
 }
+.admin-heading{
+	text-align: center;
+	font-size: 18px;
+	text-decoration: underline;
+}
+.admin-button-wrapper {
+	button{
+		padding: 5px 10px;
+		display: inline-block;
+		outline: none;
+		border: none;
+		color: white;
+		border-radius: 3px;
+		font-size: 18px;
+		
+		&:nth-child(1){
+			margin-right: 20px;
+    		background-color: var(--shp-primary);
+		}
+		&:nth-child(2){
+			background-color: rgba(0, 0, 0, .55);
+		}
+		&:hover{
+			opacity: .9;
+    		font-weight: 500;
+		}
+	}
+	
+}

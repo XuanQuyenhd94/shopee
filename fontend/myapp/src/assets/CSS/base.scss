@@ -39,6 +39,34 @@ main{
     --nth-fontcolor : rgba(0,0,0,.54);
     --shp-bordercolor : #ee4d2d;
 }
+.phone_class
+{
+    width: 50px;
+    height: 50px;
+    position: fixed;   
+    bottom: 30px;
+    right: 50px;    
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--shp-secondary);;
+    animation: play .8s ease-in-out infinite;    
+    -webkit-animation: play .8s ease-in-out infinite;
+}
+.phone_class::after
+{
+    background: url(https://ely.com.vn/wp-content/themes/flatsome/resources/images/social-footer.png), no-repeat var(--shp-secondary);
+    background-size: 100% 100%;
+    content: " ";
+    width: 30px;   
+    height: 22px;   
+    top: 15px; 
+    right: 10px;
+    position: absolute;   
+   z-index: 999999999 !important;
+   animation: ring .8s ease-in-out infinite;    
+   -webkit-animation: ring .25s ease-in-out infinite;   
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -56,4 +84,87 @@ main{
         opacity: 1;
         transform: scale(1);
     }
+}
+@keyframes RingBell {
+   from{
+        transform: rotateX(90deg);
+   }
+   to{
+    transform: rotateX(180deg);
+   }
+}
+@keyframes play
+{
+   0%
+   {
+       transform: scale(1);
+   }
+   25%
+   {
+       box-shadow: 0 0 0 10px #ffbab5, 0 0 0 15px #ffbab5;       
+   }
+   30%
+   {
+       transform: scale(1.2);
+   }
+   50% {
+    box-shadow: 0 0 0 10px #ffbab5, 0 0 0 15px #ffbab5, 0 0 0 20px #ffbab5;
+    
+   }
+   80%
+   {
+       transform: scale(1);
+   }  
+}
+
+@-webkit-keyframes play
+{
+   0%
+   {
+       transform: scale(1);
+   }
+   25%
+   {
+       box-shadow: 0 0 0 10px #ffbab5, 0 0 0 15px #ffbab5;       
+   }
+   30%
+   {
+       transform: scale(1.2);
+   }
+   50% {
+    box-shadow: 0 0 0 10px #ffbab5, 0 0 0 15px #ffbab5, 0 0 0 20px #ffbab5;
+    
+   }
+   80%
+   {
+       transform: scale(1);
+   }  
+}
+@keyframes ring 
+{
+    0%
+    {
+        transform:rotate(0);        
+    }
+   
+    50%
+    {
+        transform: rotate(45deg);
+        
+    }   
+   
+}
+@-webkit-keyframes ring 
+{
+    0%
+    {
+        transform:rotate(0);        
+    }
+   
+    50%
+    {
+        transform: rotate(45deg);
+        
+    }   
+   
 }

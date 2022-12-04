@@ -10,7 +10,7 @@ function BuyerSignup() {
                 Đăng Ký
             </div>
             <div className={styles.formControl}>
-                <input type="text" placeholder='Số điện thoại' required/>
+                <input type="text" placeholder='Email' required/>
             </div>
             <div className={styles.formControl}>
                 <input type="password" placeholder='Mật khẩu'  required/>

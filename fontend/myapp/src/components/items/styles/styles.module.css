@@ -48,7 +48,7 @@
 .sell{
     color: #4e4e4e;    
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 .sell span{
     font-size: 12px;
